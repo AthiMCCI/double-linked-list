@@ -1,0 +1,34 @@
+@startuml "double"
+
+: Declare a variable to store input and output;
+: get input from user and store in input variable;
+: create a structure with node and same name;
+: display menu with various choice;
+
+while (when choice is not to exit?) 
+--> yes
+  :Enter switch choice;
+
+switch ()
+case  ( INSERTION) 
+  :Add a node with value 1.Create a new node
+   allocate memory for new node assign
+   the new node;
+
+case ( DELETION)
+  :Copy the last node to temporvary node
+  shift the last node to secound last position;
+
+case ( DISPLAY)
+  :Define a new node Current that will point to head
+  print current data till current point;
+
+case ( SEARCH)
+  :List is traveresed from the beginning and checked the given element;
+
+endswitch
+
+  :Read the choice;
+endwhile
+stop
+@enduml
